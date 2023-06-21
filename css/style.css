@@ -104,19 +104,20 @@
     display: flex;
     margin-bottom: 149px;
 }
-.information__img {
-    width: 258px;
-    height: 525px;
-    margin-right: 180px;
-}
 .information-num {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 96px;
     line-height: 117px;
     writing-mode: vertical-rl;
+    transform: scale(-1);
     margin-right: 60px;
-    padding-top: 327px;
+    padding-top: 98px;
+}
+.information__img {
+    width: 258px;
+    height: 525px;
+    margin-right: 180px;
 }
 .information__title {
     margin-bottom: 171px;
