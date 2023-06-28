@@ -102,8 +102,24 @@
 }
 .information__flex {
     display: flex;
+    height: 525px;
+    min-width: 0;
     margin-bottom: 149px;
 }
+.swiper-container, .swiper-slide {
+    height: 525px;
+}
+.information__flex .swiper-scrollbar {
+    cursor: pointer;
+    background-color: var(--blue-color);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: var(--blue-color);
+    font-size: 55px;
+}
+
+
 .information-num {
     font-family: 'Montserrat';
     font-weight: 500;

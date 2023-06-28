@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
 
     <title>ParkShare</title>
@@ -41,10 +43,9 @@
             </div>
         </div>
     </section>
-
-    <section class="information">
-        <div class="container">
-            <div class="information__flex">
+    <section class="information swiper">
+        <div class="container swiper-wrapper">
+            <div class="information__flex swiper-slide">
                 <div class="information-num main-text-h1">01</div>
                 <img class="information__img" src="img/phone.png" alt="Phone">
                 <div class="information__text">
@@ -53,7 +54,7 @@
                     <h2 class="information__p text-h2">Укажи телефон, почту и привяжи карту<br> для оплаты</h2>
                 </div>
             </div>
-            <div class="information__flex">
+            <div class="information__flex swiper-slide">
                 <div class="information-num main-text-h1">02</div>
                 <img class="information__img" src="img/phone.png" alt="Phone">
                 <div class="information__text">
@@ -63,7 +64,7 @@
                         Просто нажми на паркомат и<br> укажи время бронирования</h2>
                 </div>
             </div>
-            <div class="information__flex">
+            <div class="information__flex swiper-slide">
                 <div class="information-num main-text-h1">03</div>
                 <img class="information__img" src="img/phone.png" alt="Phone">
                 <div class="information__text">
@@ -73,7 +74,7 @@
                         средство<br> индивидуальной мобильности</h2>
                 </div>
             </div>
-            <div class="information__flex">
+            <div class="information__flex swiper-slide">
                 <div class="information-num main-text-h1">04</div>
                 <img class="information__img" src="img/phone.png" alt="Phone">
                 <div class="information__text">
@@ -81,11 +82,12 @@
                     <h2 class="information__subtitle">Заверши тариф</h2>
                     <h2 class="information__p text-h2">Приложение покажет твою статистку и<br> стоимость парковки</h2>
                 </div>
-            </div>
-            
+            </div> 
         </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer__flex ">
@@ -117,6 +119,10 @@
         </div>
     </footer>
 
+    html
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <script>
     SmoothScroll({
