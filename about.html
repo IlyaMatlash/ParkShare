@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>ParkShare</title>
+</head>
+<body>
+    
+    <ul id="slide-out" class="sidenav">
+        <li><a class="header-link text-h2" href="index.html">Главная</a></li>
+        <!-- <li><a class="header-link text-h2" href="#">Новости</a></li> -->
+        <!-- <li><a class="header-link text-h2" href="#">Пользователям</a></li> -->
+        <li><a class="header-link text-h2" href="investors.html">Инвесторам</a></li>
+        <li><a class="header-link text-h2" href="about.html">О нас</a></li>
+    </ul>
+
+    <header class="header">
+        <div class="container">
+            <ul class="header__links">
+                <li><img class="header__logo" src="img/logo.svg" alt="Logo"></li>
+                
+                <a class="burger sidenav-trigger" data-target="slide-out">
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <section class="FAQ">
+        <div class="container">
+            <h1 class="FAQ__title main-text-h1">О нас</h1>
+            <div class="accordion">
+                <div data-tab="tab-1" class="accordion__title">
+                    <h2 class="text-h2">First</h2>
+                    <span></span>
+                </div>
+                <div id="tab-1" class="accordion__content text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam est dolorum, repellendus incidunt ipsam rem similique, a aut nostrum, minima 
+                    natus illo expedita? Beatae provident autem et ea quas vero.
+                </div>
+            </div>
+            <div class="accordion">
+                <div data-tab="tab-2" class="accordion__title">
+                    <h2 class="text-h2">Second</h2>
+                    <span></span>
+                </div>
+                <div id="tab-2" class="accordion__content text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam est dolorum, repellendus incidunt ipsam rem similique, a aut nostrum, minima 
+                    natus illo expedita? Beatae provident autem et ea quas vero.
+                </div>
+            </div>
+            <div class="accordion">
+                <div data-tab="tab-3" class="accordion__title">
+                    <h2 class="text-h2">Third</h2>
+                    <span></span>
+                </div>
+                <div id="tab-3" class="accordion__content text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam est dolorum, repellendus incidunt ipsam rem similique, a aut nostrum, minima 
+                    natus illo expedita? Beatae provident autem et ea quas vero.
+                </div>
+            </div>
+            <div class="accordion">
+                <div data-tab="tab-4" class="accordion__title">
+                    <h2 class="text-h2">Fourth</h2>
+                    <span></span>
+                </div>
+                <div id="tab-4" class="accordion__content text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam est dolorum, repellendus incidunt ipsam rem similique, a aut nostrum, minima 
+                    natus illo expedita? Beatae provident autem et ea quas vero.
+                </div>
+            </div>
+            <div class="accordion">
+                <div data-tab="tab-5" class="accordion__title">
+                    <h2 class="text-h2">Fifth</h2>
+                    <span></span>
+                </div>
+                <div id="tab-5" class="accordion__content text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam est dolorum, repellendus incidunt ipsam rem similique, a aut nostrum, minima 
+                    natus illo expedita? Beatae provident autem et ea quas vero.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex ">
+                <div class="footer__info">
+                    <img class="footer__logo" src="img/footer-logo.svg" alt="Footer logo">
+                    <a class="footer__copyright footer-l" href="#">Design: Ilya Matlash</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer-link footer-l" href="#">О нас</a>
+                    <a class="footer-link footer-l" href="#">Новости</a>
+                    <a class="footer-link footer-l" href="#">Помощь</a>
+                    <a class="footer-link footer-l" href="#">Подписка</a>
+                    <a class="footer-link footer-l" href="#">Промокоды</a>
+                </div>
+                <div class="footer__adress">
+                    <a class="footer__adress-link footer-l" href="#">г. Чебоксары,<br> Московский проспект 15</a>
+                    <a class="footer__adress-link footer-l" href="#">parkshare@support.ru</a>
+                    <a class="footer__adress-link footer-l" href="#">+7 987 654 32 10</a>
+                    <div class="footer__social_media">
+                    </div>
+                </div>
+                <img class="footer-map" src="img/map.jpg" alt="Adress on the map">
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script>
+    SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime : 800,
+    // Размер шага в пикселях
+    stepSize : 75,
+    // Дополнительные настройки:
+    // Ускорение
+    accelerationDelta : 30,
+    // Максимальное ускорение
+    accelerationMax : 2,
+    // Поддержка клавиатуры
+    keyboardSupport : true,
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll : 50,
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm : true,
+    pulseScale : 4,
+    pulseNormalize : 1,
+    // Поддержка тачпада
+    touchpadSupport : true,
+    })
+    </script>
+    
+
+</body>
+</html>

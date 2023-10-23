@@ -1,0 +1,78 @@
+.admin__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.admin__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.admin__form-element {
+    margin-bottom: 30px;
+}
+.admin__form-items {
+    margin-bottom: 30px;
+}
+.admin__form-input {
+    margin-bottom: 30px;
+    padding: 16px 32px;
+    width: 30%;
+    background: rgba(95, 105, 130, 0.25);
+    color: var(--dark-color);
+    border-radius: 12px;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px; 
+}
+.admin__form-buttons {
+    margin-bottom: 140px;
+}
+.admin__form-btn-add {
+    width: 230px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    background: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+
+    margin-right: 30px;
+}
+.admin__form-btn-save {
+    width: 230px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    background: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+}
+.admin__form-btn-del {
+    width: 10%px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    background: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+}
+.admin__form-btn-add:hover,
+.admin__form-btn-save:hover,
+.admin__form-btn-del:hover {
+    background-color: var(--dark-color);
+}

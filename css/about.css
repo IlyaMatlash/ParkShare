@@ -1,0 +1,87 @@
+.FAQ {
+  margin-bottom: 200px;
+}
+.FAQ__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 25px;
+  cursor: pointer;
+  border: 1px solid var(--dark-color);
+  /* border-top: none; */
+  border-left: none;
+  border-right: none;
+  color: var(--dark-color);
+  margin-bottom: -2px;
+}
+/* .accordion__title:first-child {
+  border-top: 1px solid var(--dark-color);
+} */
+.accordion__title span {
+  display: inline-flex;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  transform: rotate(0);
+  
+  transition: transform .5s ease-out;
+}
+.accordion__title.active span {
+  transform: rotate(45deg);
+}
+.accordion__title span::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-color);
+}
+.accordion__title span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-color);
+}
+.accordion__content {
+  border: 1px solid var(--dark-color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: content-box;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s, ease-out .5s, visibility .1s ease-out .5s;
+  margin-bottom: 0px;
+}
+.accordion__content:last-child {
+  border-bottom: 1px solid var(--dark-color);
+}
+.accordion__content.active {
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  /* transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s, ease-out, visibility .1s ease-out; */
+  transition: max-height .5s, padding .5s
+}
