@@ -46,13 +46,14 @@
 
             <form class="admin__form" name="form5">
                 <div class="admin__form-items">
-                    <p class="admin__form-element text-p" onclick="changeFormProperties(form5)">Паркомат ул.Парковая</з>
-                    <p class="admin__form-element text-p" onclick="changeFormProperties(form5)">Паркомат ул.Строителей</з>
-                    <p class="admin__form-element text-p" onclick="changeFormProperties(form5)">Паркомат ул.Восточная</з>
+                    <p class="admin__form-element text-p">Паркомат ул.Парковая</з>
+                    <p class="admin__form-element text-p">Паркомат ул.Строителей</з>
+                    <p class="admin__form-element text-p">Паркомат ул.Восточная</з>
                 </div>
                 <div class="admin__form-buttons">
-                    <button class="admin__form-btn-add" onclick="addInputElement(event)">Добавить</button>
-                    <button class="admin__form-btn-save" onclick="saveInputElement(event)">Сохранить</button>
+                    <!-- <button class="admin__form-btn-add" onclick="addInputElement(event)">Добавить</button>
+                    <button class="admin__form-btn-save" onclick="saveInputElement(event)">Сохранить</button> -->
+                    <input class="admin__form-btn-change type="button" value='Редактировать' onclick="changeFormProperties()">
                 </div>
             </form>
         </div> 
