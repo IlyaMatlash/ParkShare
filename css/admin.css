@@ -28,7 +28,7 @@
     margin-bottom: 140px;
 }
 
-.admin__form-btn-change {
+.admin__form-btn {
     width: 230px;
     height: 50px;
     border: none;
@@ -43,53 +43,12 @@
     transition: background-color .2s linear;
 }
 
-.admin__form-btn-add {
-    width: 230px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    padding: 16px 32px;
-    background: var(--blue-color);
-    color: var(--white-color);
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-
-    transition: background-color .2s linear;
-
-    margin-right: 30px;
-}
 .admin__form-btn-save {
-    width: 230px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    padding: 16px 32px;
-    background: var(--blue-color);
-    color: var(--white-color);
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-
-    transition: background-color .2s linear;
+    margin-right: 30px;
 }
 .admin__form-btn-del {
     width: 10%;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    padding: 16px 32px;
-    background: var(--blue-color);
-    color: var(--white-color);
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-
-    transition: background-color .2s linear;
 }
-.admin__form-btn-change:hover,
-.admin__form-btn-add:hover,
-.admin__form-btn-save:hover,
-.admin__form-btn-del:hover {
+.admin__form-btn:hover { 
     background-color: var(--dark-color);
 }
