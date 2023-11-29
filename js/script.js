@@ -127,65 +127,76 @@ form.addEventListener('submit', formSend);
 
 });
 
+var container = document.querySelector('.admin__form-buttons');
 
 function changeFormProperties() {
-  let p = document.querySelectorAll('p');
+  let p = document.querySelectorAll("p");
   let text
   for(let i = 0; i < p.length; i++) {
     text = p[i].textContent
-    p[i].innerHTML = `Паркомат № ${i+1} <input class="admin__form-input" type="text" value="${text}"><button class="admin__form-btn-del" onclick="deleteInputElement(this)">Удалить</button><br>`;
+    p[i].innerHTML = `Паркомат № ${i+1} <input class="admin__form-input" type="text" value="${text}">
+    <input type="button" value="Удалить" class="admin__form-btn admin__form-btn-del" onclick="deleteInputElement(this)">`;
   }
 
-  let inputs = document.getElementsByTagName('p');
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].onclick = ' ';
-}
-}
-
-function addInputElement(event) {
-  event.preventDefault();
-
-  let form = document.querySelectorAll('p');
-  let newp = document.createElement('p');
-  newp.innerHTML = `Паркомат № ${form.length+1} <input class="admin__form-input" type="text" value=""><button class="admin__form-btn-del" onclick="deleteInputElement(this)">Удалить</button>`;
-  form[form.length-1].after(newp)
+  let btn = document.querySelector("input[value='Редактировать']")
+  let btnSave = document.getElementById("btnSave");
+  if (!btnSave) {
+    let btnSave = document.createElement("input")
+    btnSave.type="button"
+    btnSave.value="Сохранить"
+    btnSave.setAttribute("onclick", "saveInputElement()")
+    btnSave.setAttribute("class", "btn admin__form-btn admin__form-btn-save")
+    btnSave.id="btnSave"
+    container.appendChild(btnSave)
+  }
+  
+  let btnAdd = document.getElementById("btnAdd");
+    if (!btnAdd) {
+        let btnAdd=document.createElement("input")
+        btnAdd.type="button"
+        btnAdd.value="Добавить"
+        btnAdd.setAttribute("onclick","addInputElement()")
+        btnAdd.setAttribute("class","btn admin__form-btn")
+        btnAdd.id="btnAdd"
+        container.appendChild(btnAdd)
+    }
+    btn.remove()
 }
 
 function deleteInputElement(button) {
   button.parentElement.remove()
 } 
 
-let btn = document.querySelector("input[value=ok]")
+function addInputElement() {
 
-let btnSave = document.createElement("input")
-btnSave.type="button"
-btnSave.value="Save"
-btnSave.setAttribute("onkclick", "save()")
-btnSave.setAttribute("class", "btn")
-btnSave.id="btnSave"
-btn.after(btnSave)
+  let form = document.querySelectorAll("p");
+  let newp = document.createElement("p");
+  newp.innerHTML = `Паркомат № ${form.length+1} <input class="admin__form-input" type="text" value="">
+  <input type="button" value="Удалить" class="admin__form-btn admin__form-btn-del" onclick="deleteInputElement(this)">`;
+  form[form.length-1].after(newp)
+}
 
-function saveInputElement(event) {
-  event.preventDefault();
-  let p = document.querySelectorAll('p');
-  let text
+function saveInputElement() {
+  let p = document.querySelectorAll("p");
   for(let i = 0; i < p.length; i++) {
-    text = p[i].children[0].value
+    let text = p[i].querySelector("input[type=text]").value;
     p[i].innerHTML = text
   }
 
   let btn = document.querySelectorAll(".btn")
-  // let btnOk = document.createElement("input")
-  // btnOk.type="button"
-  // btnOk.value="Ok"
-  // btnOk.setAttribute("onklick", "changeFormProperties()")
-  // btnOk.id="btnOk"
-  // btn[0].after(btnOk)
+  let btnOk = document.createElement("input")
+  btnOk.type="button"
+  btnOk.value="Редактировать"
+  btnOk.setAttribute("onclick", "changeFormProperties()")
+  btnOk.setAttribute("class","btn admin__form-btn")
+  btnOk.id="btnOk"
+  container.appendChild(btnOk)
+  //btn[0].after(btnOk)
 
   for(let i = 0; i < btn.length; i++) {
     btn[i].remove()
   }
 
-  // btnOk.setAttribute("class", "btn")
+  btnOk.setAttribute("class", "btn")
  
 }
