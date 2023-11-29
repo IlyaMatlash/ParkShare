@@ -49,22 +49,9 @@ ul#slide-out:not(.browser-default) > li {
     padding-bottom: 60px;
     background-color: #fff;
     z-index: 999;
-    overflow-y: auto;
-    will-change: transform;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform: translateX(-105%);
-            transform: translateX(-105%);
+
   }
-  
-  .sidenav.right-aligned {
-    right: 0;
-    -webkit-transform: translateX(105%);
-            transform: translateX(105%);
-    left: auto;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
+
   
   .sidenav .collapsible {
     margin: 0;
@@ -110,6 +97,20 @@ ul#slide-out:not(.browser-default) > li {
   }
 
   @media only screen and (max-width: 768px) {
+    .header__links {
+      justify-content: flex-end;
+    }
     
+    .header__logo {
+      margin-right: auto;
+    }
+    
+    .header__links ul {
+      display: none;
+    }
+    
+    .burger {
+      display: flex;
+    }
 
   }
