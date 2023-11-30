@@ -85,3 +85,9 @@
   /* transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s, ease-out, visibility .1s ease-out; */
   transition: max-height .5s, padding .5s
 }
+
+@media screen and (max-width: 1440px) {
+  .accordion {
+    padding: 0 20px;
+  }
+}
