@@ -18,19 +18,27 @@
 </head>
 <body>
     
-    <ul id="slide-out" class="sidenav">
-        <li><a class="header-link text-h2" href="index.html">Главная</a></li>
-        <!-- <li><a class="header-link text-h2" href="#">Новости</a></li> -->
-        <!-- <li><a class="header-link text-h2" href="#">Пользователям</a></li> -->
-        <li><a class="header-link text-h2" href="#">Инвесторам</a></li>
-        <li><a class="header-link text-h2" href="about.html">О нас</a></li>
-    </ul>
-
-    <header class="header">
+    <nav class="header">
         <div class="container">
             <ul class="header__links">
                 <li><img class="header__logo" src="img/logo.svg" alt="Logo"></li>
-                
+
+                <ul class="sidenav" id="slide-out">
+                    <li><a class="header-link text-h2" href="index.html">Главная</a></li>
+                    <li><a class="header-link text-h2" href="login.html">Вход</a></li>
+                    <li><a class="header-link text-h2" href="signup.html">Регистрация</a></li>
+                    <li><a class="header-link text-h2" href="investors.html">Инвесторам</a></li>
+                    <li><a class="header-link text-h2" href="about.html">О нас</a></li>
+                </ul>
+
+                <ul class="header-link__items" id="slide-out">
+                    <li><a class="header-link text-h2" href="index.html">Главная</a></li>
+                    <li><a class="header-link text-h2" href="login.html">Вход</a></li>
+                    <li><a class="header-link text-h2" href="signup.html">Регистрация</a></li>
+                    <li><a class="header-link text-h2" href="investors.html">Инвесторам</a></li>
+                    <li><a class="header-link text-h2" href="about.html">О нас</a></li>
+                </ul>
+
                 <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger_line"></span>
                     <span class="burger_line"></span>
@@ -38,7 +46,7 @@
                 </a>
             </ul>
         </div>
-    </header>
+    </nav>
 
     
     <div class="container">

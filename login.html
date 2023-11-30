@@ -8,24 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
     <title>ParkShare</title>
 </head>
 <body>
     
-    <header class="header">
+    <nav class="header">
         <div class="container">
-            <div class="header__links">
-                <img class="header__logo" src="img/logo.svg" alt="Logo">
-                <a class="header-link text-p" href="index.html">Главная</a>
-                <a class="header-link text-p" href="#">Новости</a>
-                <a class="header-link text-p" href="main.html">Паркоматы рядом</a>
-                <a class="header-link text-p" href="#">Контакты</a>
-                <a class="header-link text-p" href="#">Подписка</a>
-                <a class="header-link text-p" href="#">Промокоды</a>
-            </div>
+            <ul class="header__links">
+                <li><img class="header__logo" src="img/logo.svg" alt="Logo"></li>
+
+                <ul class="sidenav" id="slide-out">
+                    <li><a class="header-link text-h2" href="index.html">Главная</a></li>
+                    <li><a class="header-link text-h2" href="login.html">Вход</a></li>
+                    <li><a class="header-link text-h2" href="signup.html">Регистрация</a></li>
+                    <li><a class="header-link text-h2" href="investors.html">Инвесторам</a></li>
+                    <li><a class="header-link text-h2" href="about.html">О нас</a></li>
+                </ul>
+
+                <ul class="header-link__items" id="slide-out">
+                    <li><a class="header-link text-h2" href="index.html">Главная</a></li>
+                    <li><a class="header-link text-h2" href="login.html">Вход</a></li>
+                    <li><a class="header-link text-h2" href="signup.html">Регистрация</a></li>
+                    <li><a class="header-link text-h2" href="investors.html">Инвесторам</a></li>
+                    <li><a class="header-link text-h2" href="about.html">О нас</a></li>
+                </ul>
+
+                <a class="burger sidenav-trigger" data-target="slide-out">
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                </a>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <div class="login__container">
         <h1 class="login__title text-h1">Вход</h1>
