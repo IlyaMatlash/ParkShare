@@ -95,22 +95,3 @@ ul#slide-out:not(.browser-default) > li {
     z-index: 997;
     display: none;
   }
-
-  @media only screen and (max-width: 768px) {
-    .header__links {
-      justify-content: flex-end;
-    }
-    
-    .header__logo {
-      margin-right: auto;
-    }
-    
-    .header__links ul {
-      display: none;
-    }
-    
-    .burger {
-      display: flex;
-    }
-
-  }
