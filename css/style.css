@@ -118,7 +118,7 @@ ul#slide-out:not(.browser-default) > li {
 .header-link__items {
     display: flex;
     justify-content: space-between;
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 .header-link {
     text-decoration: none;
@@ -129,6 +129,16 @@ ul#slide-out:not(.browser-default) > li {
 }
 .header-link:hover {
     color: var(--blue-color);
+}
+
+.header__alert{
+    width: 32px;
+    height: 32px;
+    margin-right: 57px;
+}
+.header__account {
+    width: 32px;
+    height: 32px;
 }
 
 .main__conetnt-flex {
