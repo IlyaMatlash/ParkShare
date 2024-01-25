@@ -47,19 +47,19 @@
         </div>
     </nav>
 
-    <div class="login__container">
+    <form class="login__container" action="php/login.php" method="post">
         <h1 class="login__title text-h1">Вход</h1>
         <div class="form-recovery">
-            <input class="login-form text-p" type="text" placeholder="Логин">
-            <input class="login-form text-p" type="text" placeholder="Пароль">
+            <input class="login-form text-p" type="email" placeholder="Почта" name="email">
+            <input class="login-form text-p" type="password" placeholder="Пароль" name="pass">
             <a class="recovery__btn text-p" href="#">Забыли пароль?</a>
         </div>
 
         <div class="login-sign">
-            <form action="profile.html"><button class="login__btn text-p">Войти</button></form>
+            <button type="submit" class="login__btn text-p">Войти</button>
             <form action="signup.html"><button class="signup__btn text-p">Зарегестрироваться</button></form>
         </div>
-    </div>
+    </form>
 
 
     <footer class="footer">
