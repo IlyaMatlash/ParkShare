@@ -1,7 +1,3 @@
-.login {
-    display: flex;
-    flex-direction: row;
-}
 .login__container {
     width: 380px;
     margin: 200px auto;
@@ -41,10 +37,6 @@
     color: var(--blue-color);
 }
 
-.login-sign {
-    text-align: center;
-}
-
 .login__btn {
     margin-bottom: 30px;
     width: 100%;
@@ -63,21 +55,25 @@
 .login__btn:hover {
     background-color: var(--grey-color);
 }
-.signup__btn {
+a.signup__btn {
+    display: inline-block;
     width: 100%;
     height: 50px;
     padding: 16px 32px;
+    text-align: center;
 
+    color: inherit;
     background-color: var(--white-color);
 
     border: 1px solid var(--dark-color);
     box-shadow: 0px 2px 4px var(--dark-color);
-    border-radius: 10px;
+    border-radius: 12px;
     border: none;
+    
 
     transition: background-color .2s linear;
 }
-.signup__btn:hover {
+a.signup__btn:hover {
     background-color: var(--light-color);
 }
 

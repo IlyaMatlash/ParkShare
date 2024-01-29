@@ -108,7 +108,7 @@ ul#slide-out:not(.browser-default) > li {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
-    padding: 0 20px;
+    padding: 0;
 }
 .header__logo {
     text-decoration: none;
@@ -122,7 +122,7 @@ ul#slide-out:not(.browser-default) > li {
 }
 .header-link {
     text-decoration: none;
-    margin-right: 60px;
+    margin-left: 60px;
     color: var(--dark-color);
 
     transition: color .2s linear;
@@ -134,11 +134,12 @@ ul#slide-out:not(.browser-default) > li {
 .header__alert{
     width: 32px;
     height: 32px;
-    margin-right: 57px;
+    
 }
 .header__account {
     width: 32px;
     height: 32px;
+    margin-left: 60px;
 }
 
 .main__conetnt-flex {
@@ -162,11 +163,10 @@ ul#slide-out:not(.browser-default) > li {
 
 .main__content-title {
     color: var(--blue-color);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .main__conetnt-text {
-    margin-bottom: 120px;
     color: var(--grey-color);
 }
 
@@ -198,11 +198,9 @@ ul#slide-out:not(.browser-default) > li {
 }
 
 .information__title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
-.information__p {
-    margin-bottom: 70px;
-}
+
 .information__links {
     align-self: flex-end;
 }
